@@ -1,3 +1,9 @@
+---
+const response = await fetch("https://explorationdumonde.be/api/films/2025");
+const films = await response.json();
+---
+
 <main>
-	<h1 class="text-4xl">Le plus grand titre</h1>
+	<h1 class="text-7xl">FILMS</h1>
+	{ films.map((film) => <h2>{film.title}</h2>)}
 </main>
