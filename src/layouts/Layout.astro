@@ -12,12 +12,15 @@ import Logo from '../assets/logo.svg';
 		<meta name="generator" content={Astro.generator} />
 		<title>Exploration du Monde</title>
 	</head>
-	<body class="max-w-7xl mx-auto p-4">
-		<header class="flex">
-			<a href="/">
-				<Logo class="max-h-16 w-auto" />
-			</a>
+	<body class="max-w-7xl mx-auto p-4 space-y-8">
+		<header>
+			<a href="/"><Logo class="max-h-16 w-auto" /></a>
 		</header>
-		<slot />
+		<main>
+			<slot />
+		</main>
+		<footer>
+			Footer
+		</footer>
 	</body>
 </html>
